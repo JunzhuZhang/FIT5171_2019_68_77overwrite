@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>space</groupId>
+    <groupId>68</groupId>
     <artifactId>fit5171_2019_68</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -194,10 +194,7 @@
                 </configuration>
             </plugin>
         </plugins>
-        <defaultGoal>install</defaultGoal>
-        <!-- Source directory configuration -->
-        <sourceDirectory>src</sourceDirectory>
-        
+
     </build>
 
 
