@@ -28,7 +28,24 @@ public class RocketMiner {
      * @return the list of k most active rockets.
      */
     public List<Rocket> mostLaunchedRockets(int k) {
-        return null;
+        logger.info("find the top" + k + "most launched rockets ");
+        if(k <= 0){
+            throw new IllegalArgumentException("the number k should no less than 1");
+        }
+        Collection<Launch> launchSet = dao.loadAll(Launch.class);
+        if (launchSet.isEmpty()){
+            return Collections.emptyList();
+        }
+        List<Rocket> rockets = new ArrayList<>();
+        launchSet.stream().map((a) -> a.getLaunchServiceProvider().getRockets()).forEach((a) -> rockets.addAll(a));
+        Map<String, List<Rocket>> collect = rockets.stream().collect(Collectors.groupingBy((a) -> a.getName()));
+        List<Rocket> result = collect.values().stream()
+                .sorted((a,b) -> b.size()-a.size())
+                .map((a) -> a.get(0))
+                .limit(k).collect(Collectors.toList());
+
+
+        return result;
     }
 
     /**
@@ -41,8 +58,75 @@ public class RocketMiner {
      * @return the list of k most reliable ones.
      */
     public List<LaunchServiceProvider> mostReliableLaunchServiceProviders(int k) {
-        return null;
+        logger.info("find top " + k +" Reliable Launch Service Providers");
+        if(k <= 0){
+            throw new IllegalArgumentException("the number k should no less than 1");
+        }
+        Collection<Launch> launches = dao.loadAll(Launch.class);
+        List<LaunchServiceProvider> allLaunchServiceProvider = new ArrayList<>();
+        launches.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
+        Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
+
+        List<LaunchServiceProvider> result = collect.values().stream()
+                .sorted((a, b) -> {
+                    int aCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : a) {
+                        aCount += launchServiceProvider.getRockets().size();
+                    }
+                    int bCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : b) {
+                        bCount += launchServiceProvider.getRockets().size();
+                    }
+                    return bCount - aCount;
+                })
+
+                .map((a) -> a.get(0))
+                .limit(k).collect(Collectors.toList());
+
+            return result;
+        }
+
+    /**
+     * TODO: to be implemented & tested!
+     * <p>
+     * Returns the top-k most reliable launch service providers as measured
+     * by percentage of successful launches.
+     *
+     * @param k the number of launch service providers to be returned.
+     * @return the list of k most reliable ones.
+     */
+    public List<LaunchServiceProvider> ReliableLaunchServiceProviders(int k) {
+        logger.info("find top " + k +" Reliable Launch Service Providers");
+        if(k <= 0){
+            throw new IllegalArgumentException("the number k should no less than 1");
+        }
+        Collection<Launch> launches = dao.loadAll(Launch.class);
+        List<LaunchServiceProvider> allLaunchServiceProvider = new ArrayList<>();
+        launches.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
+        Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
+
+        List<LaunchServiceProvider> result = collect.values().stream()
+                .sorted((a, b) -> {
+                    int aCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : a) {
+                        aCount += launchServiceProvider.getRockets().size();
+                    }
+                    int bCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : b) {
+                        bCount += launchServiceProvider.getRockets().size();
+                    }
+                    return bCount - aCount;
+                })
+
+                .map((a) -> a.get(0))
+                .limit(k).collect(Collectors.toList());
+
+        return result;
     }
+
+
+
+
 
     /**
      * <p>
@@ -68,7 +152,27 @@ public class RocketMiner {
      */
     public String dominantCountry(String orbit) {
         logger.info("find the dominant country in" + orbit + "orbit");
-        return null;}
+        Collection<Launch> launches = dao.loadAll(Launch.class);
+        String country = launches.stream()
+                .filter((a) -> a.getOrbit().equals(orbit))
+                .map(Launch::getLaunchServiceProvider)
+                .collect(Collectors.groupingBy(LaunchServiceProvider::getCountry))
+                .values().stream().sorted((a, b) -> {
+                    int aCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : a) {
+                        aCount += launchServiceProvider.getRockets().size();
+                    }
+                    int bCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : b) {
+                        bCount += launchServiceProvider.getRockets().size();
+                    }
+                    return bCount - aCount;
+                })
+                .limit(1).findFirst().get().get(0).getCountry();
+
+
+        return country;
+    }
 
     /**
      * TODO: to be implemented & tested!
@@ -113,32 +217,33 @@ public class RocketMiner {
      * the launch price * number of launch
      */
     public List<LaunchServiceProvider> highestRevenueLaunchServiceProviders(int k, int year) {
-        logger.info("find top " + k +" launch service provider who has the highest revenue");
-        if(k <= 0){
+        logger.info("find top " + k + " launch service provider who has the highest revenue");
+        if (k <= 0) {
             throw new IllegalArgumentException("the number of k should no less than i");
         }
         Collection<Launch> launchSet = dao.loadAll(Launch.class);
-        if (launchSet.isEmpty()){
+        if (launchSet.isEmpty()) {
             return Collections.emptyList();
         }
-        List<Launch> launchList = new ArrayList<>(launchSet);
-        Collection<LaunchServiceProvider> providerCollection = dao.loadAll(LaunchServiceProvider.class);
-        List<LaunchServiceProvider> sortList = new ArrayList<>();
-        Iterator<LaunchServiceProvider> iterator =  providerCollection.iterator();
-        int revenue = 0;
-        while (iterator.hasNext()) {
-            LaunchServiceProvider lsp = iterator.next();
-            Launch l = new Launch();
-            int year1 = l.getLaunchDate().getYear();
-            if (year == year1){
-                revenue = revenue + l.getPrice().intValue();
-                lsp.setSalesRevenue(revenue);
-                sortList.add(lsp);
-            }
-        }
-        Comparator<LaunchServiceProvider> comparator = (a, b) -> -a.getSalesRevenue()-(b.getSalesRevenue());
-        return sortList.stream().sorted(comparator).limit(k).collect(Collectors.toList());
+        List<LaunchServiceProvider> result = launchSet.stream()
+                .filter(a -> a.getLaunchDate().getYear() == year)
+                .collect(Collectors.groupingBy((a) -> a.getLaunchServiceProvider().getName()))
+                .values().stream().sorted((a, b) -> {
+                    BigDecimal aPrice = BigDecimal.ZERO;
+                    for (Launch launch : a) {
+                        aPrice = aPrice.add(launch.getPrice());
 
-
+                    }
+                    BigDecimal bPrice = BigDecimal.ZERO;
+                    for (Launch launch : b) {
+                        bPrice = bPrice.add(launch.getPrice());
+                    }
+                    return bPrice.compareTo(aPrice);
+                })
+                .map(a -> a.get(0))
+                .map(Launch::getLaunchServiceProvider)
+                .limit(k).collect(Collectors.toList());
+        return result;
     }
+
 }

@@ -13,19 +13,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="476">
+              <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,9 +25,18 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1377">
+              <caret line="106" selection-start-line="106" selection-end-line="106" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="357">
               <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -48,8 +48,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
+            <state relative-caret-position="-1402">
+              <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7854#7855#0" expanded="true" />
+                <element signature="e#7931#7932#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Entity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3859">
+              <caret line="227" column="6" selection-start-line="227" selection-start-column="6" selection-end-line="227" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,21 +81,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2091">
-              <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="306">
               <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
@@ -81,7 +92,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1241">
+            <state relative-caret-position="1479">
               <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -89,30 +100,6 @@
                 <element signature="e#3583#3584#0" expanded="true" />
                 <element signature="e#3670#3671#0" expanded="true" />
                 <element signature="e#3708#3709#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/dataaccess/neo4j/Neo4jDAOUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
-              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -134,13 +121,13 @@
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/RocketUnitTest.java" />
         <option value="$PROJECT_DIR$/.idea/.name" />
-        <option value="$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/Launch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java" />
       </list>
     </option>
   </component>
@@ -169,9 +156,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1300" />
-    <option name="height" value="740" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1260" />
+    <option name="height" value="640" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -179,7 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,18 +185,106 @@
               <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="dataaccess" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="dataaccess" type="462c0819:PsiDirectoryNode" />
+              <item name="neo4j" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="mining" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="mining" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556325612277" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../assignment1/assignment1-code base extension and test" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556406299351" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -228,37 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.fit5171_2019_68 [-test]">
-    <configuration name="GunrunnerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rockets" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rockets.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rockets.model" />
-      <option name="MAIN_CLASS_NAME" value="rockets.model.GunrunnerUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LaunchUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fit5171_2019_68" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rockets.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rockets.model" />
-      <option name="MAIN_CLASS_NAME" value="rockets.model.LaunchUnitTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets">
     <configuration name="RocketMinerUnitTest.missionExorbitanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fit5171_2019_68" />
       <extension name="coverage">
@@ -270,6 +316,38 @@
       <option name="PACKAGE_NAME" value="rockets.mining" />
       <option name="MAIN_CLASS_NAME" value="rockets.mining.RocketMinerUnitTest" />
       <option name="METHOD_NAME" value="missionExorbitanceTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMinerUnitTest.shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fit5171_2019_68" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rockets.mining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rockets.mining" />
+      <option name="MAIN_CLASS_NAME" value="rockets.mining.RocketMinerUnitTest" />
+      <option name="METHOD_NAME" value="shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fit5171_2019_68" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rockets.mining.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rockets.mining" />
+      <option name="MAIN_CLASS_NAME" value="rockets.mining.RocketMinerUnitTest" />
+      <option name="METHOD_NAME" value="shouldReturnHighestRevenueLaunchServiceProviders(int,int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,7 +369,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fit5171_2019_68" />
       <extension name="coverage">
         <pattern>
@@ -301,13 +379,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="rockets.mining" />
       <option name="MAIN_CLASS_NAME" value="rockets.mining.RocketMinerUnitTest" />
-      <option name="METHOD_NAME" value="shouldReturnTopMostRecentLaunches(int)" />
+      <option name="METHOD_NAME" value="shouldReturnTopMostLaunchedRockets(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="fit5171_2019_68 [-test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+    <configuration name="fit5171_2019_68 []" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -317,9 +395,7 @@
               <set />
             </option>
             <option name="goals">
-              <list>
-                <option value="-test" />
-              </list>
+              <list />
             </option>
             <option name="pomFileName" />
             <option name="profilesMap">
@@ -333,20 +409,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.GunrunnerUnitTest" />
-      <item itemvalue="JUnit.LaunchUnitTest" />
       <item itemvalue="JUnit.RocketMinerUnitTest.missionExorbitanceTest" />
       <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" />
-      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" />
-      <item itemvalue="Maven.fit5171_2019_68 [-test]" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit" />
+      <item itemvalue="Maven.fit5171_2019_68 []" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" />
+        <item itemvalue="JUnit.RocketMinerUnitTest.shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit" />
+        <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" />
         <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" />
         <item itemvalue="JUnit.RocketMinerUnitTest.missionExorbitanceTest" />
-        <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" />
-        <item itemvalue="JUnit.LaunchUnitTest" />
-        <item itemvalue="JUnit.GunrunnerUnitTest" />
       </list>
     </recent_temporary>
   </component>
@@ -374,50 +450,52 @@
       <workItem from="1556088933851" duration="1291000" />
       <workItem from="1556148822042" duration="22838000" />
       <workItem from="1556323053822" duration="2391000" />
-      <workItem from="1556328092824" duration="3026000" />
+      <workItem from="1556328092824" duration="23277000" />
+      <workItem from="1556372563652" duration="7103000" />
+      <workItem from="1556404801676" duration="1497000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.25 at 13h 45m 01s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnHighestRevenueLaunchServiceProviders - 2019.04.28 at 00h 44m 47s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostExpensiveLaunches - 2019.04.25 at 13h 45m 40s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostLaunchedRockets - 2019.04.28 at 01h 04m 52s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostExpensiveLaunches - 2019.04.25 at 13h 53m 25s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostLaunchedRockets - 2019.04.28 at 01h 09m 28s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.25 at 13h 55m 14s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit - 2019.04.28 at 01h 28m 09s.xml">
+      <configuration name="RocketMinerUnitTest.shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostExpensiveLaunches - 2019.04.25 at 13h 58m 37s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostLaunchedRockets - 2019.04.28 at 01h 40m 20s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostExpensiveLaunches - 2019.04.25 at 14h 02m 11s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnHighestRevenueLaunchServiceProviders - 2019.04.28 at 01h 42m 36s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_missionExorbitanceTest - 2019.04.25 at 14h 11m 41s.xml">
-      <configuration name="RocketMinerUnitTest.missionExorbitanceTest" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnHighestRevenueLaunchServiceProviders - 2019.04.28 at 01h 47m 12s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_missionExorbitanceTest - 2019.04.25 at 14h 12m 54s.xml">
-      <configuration name="RocketMinerUnitTest.missionExorbitanceTest" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnHighestRevenueLaunchServiceProviders - 2019.04.28 at 01h 50m 01s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnHighestRevenueLaunchServiceProviders" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_missionExorbitanceTest - 2019.04.25 at 14h 13m 42s.xml">
-      <configuration name="RocketMinerUnitTest.missionExorbitanceTest" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit - 2019.04.28 at 02h 05m 33s.xml">
+      <configuration name="RocketMinerUnitTest.shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostExpensiveLaunches - 2019.04.25 at 14h 13m 59s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" configurationId="JUnit" />
+    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostLaunchedRockets - 2019.04.28 at 08h 40m 41s.xml">
+      <configuration name="RocketMinerUnitTest.shouldReturnTopMostLaunchedRockets" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58833000" />
+    <option name="totallyTimeSpent" value="87684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30420712" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22977346" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -426,17 +504,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.062166963" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.053285968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.15097691" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.38721138" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3285968" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32938856" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5008091" side_tool="true" weight="0.062166963" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.09769094" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -452,6 +530,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -463,7 +581,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java</url>
-          <line>114</line>
+          <line>144</line>
           <properties class="rockets.mining.RocketMinerUnitTest" method="shouldReturnTopMostExpensiveLaunches">
             <option name="EMULATED" value="true" />
           </properties>
@@ -537,18 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="39" column="70" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#395#396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
         </state>
       </provider>
     </entry>
@@ -561,60 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="94" column="13" selection-start-line="94" selection-start-column="13" selection-end-line="94" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="148" column="6" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3538#3539#0" expanded="true" />
-            <element signature="e#3583#3584#0" expanded="true" />
-            <element signature="e#3670#3671#0" expanded="true" />
-            <element signature="e#3708#3709#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -638,10 +690,121 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="883">
+          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/stream/ReferencePipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="417" selection-start-line="417" selection-end-line="417" />
+          <folding>
+            <element signature="e#15205#15206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/stream/ForEachOps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+          <folding>
+            <element signature="e#6053#6054#0" expanded="true" />
+            <element signature="e#6103#6104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.3.2/junit-jupiter-engine-5.3.2.jar!/org/junit/jupiter/engine/execution/ExecutableInvoker.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="134" selection-start-line="134" selection-end-line="134" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1377">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
+        <state relative-caret-position="306">
           <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3538#3539#0" expanded="true" />
+            <element signature="e#3583#3584#0" expanded="true" />
+            <element signature="e#3670#3671#0" expanded="true" />
+            <element signature="e#3708#3709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1402">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="39" selection-end-line="97" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7854#7855#0" expanded="true" />
+            <element signature="e#7931#7932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3859">
+          <caret line="227" column="6" selection-start-line="227" selection-start-column="6" selection-end-line="227" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
