@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="199" column="8" selection-start-line="199" selection-start-column="8" selection-end-line="199" selection-end-column="8" />
+            <state relative-caret-position="126">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -228,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches">
+  <component name="RunManager" selected="Maven.fit5171_2019_68 [-test]">
     <configuration name="GunrunnerUnitTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rockets" />
       <extension name="coverage">
@@ -307,6 +307,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="fit5171_2019_68 [-test]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="-test" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.GunrunnerUnitTest" />
+      <item itemvalue="JUnit.LaunchUnitTest" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.missionExorbitanceTest" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" />
+      <item itemvalue="Maven.fit5171_2019_68 [-test]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostExpensiveLaunches" />
@@ -341,7 +374,7 @@
       <workItem from="1556088933851" duration="1291000" />
       <workItem from="1556148822042" duration="22838000" />
       <workItem from="1556323053822" duration="2391000" />
-      <workItem from="1556328092824" duration="2024000" />
+      <workItem from="1556328092824" duration="3026000" />
     </task>
     <servers />
   </component>
@@ -378,13 +411,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57831000" />
+    <option name="totallyTimeSpent" value="58833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30420712" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30420712" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -401,7 +434,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3285968" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32938856" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
@@ -607,8 +640,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="199" column="8" selection-start-line="199" selection-start-column="8" selection-end-line="199" selection-end-column="8" />
+        <state relative-caret-position="126">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>

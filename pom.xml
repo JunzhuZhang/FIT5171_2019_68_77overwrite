@@ -195,9 +195,6 @@
             </plugin>
         </plugins>
 
-        <defaultGoal>test</defaultGoal>
-        <!-- Source directory configuration -->
-        <sourceDirectory>src</sourceDirectory>
 
     </build>
 
