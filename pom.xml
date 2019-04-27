@@ -119,6 +119,10 @@
                 <version>2.22.0</version>
             </plugin>
             <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.1</version>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>2.22.0</version>
@@ -193,6 +197,11 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build> 
+        <defaultGoal>install</defaultGoal>
+        <!-- Source directory configuration -->
+        <sourceDirectory>src</sourceDirectory>
+    </build>
+
+
 
 </project>
