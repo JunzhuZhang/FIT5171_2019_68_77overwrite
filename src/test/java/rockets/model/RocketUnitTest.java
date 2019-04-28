@@ -11,8 +11,7 @@ public class RocketUnitTest {
     //for integration test
     private LaunchServiceProvider makeProvider(){
         LaunchServiceProvider lsp= new LaunchServiceProvider("SpaceX",2002,"USA");
-        return lsp;
-    }
+        return lsp; }
 
     @BeforeEach
     public void setup() {

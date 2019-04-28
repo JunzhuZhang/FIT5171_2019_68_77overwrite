@@ -1,13 +1,24 @@
 package rockets.model;
 
+import com.google.common.collect.Sets;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class LaunchServiceProviderUnitTest {
     LaunchServiceProvider target;
+
+    private Rocket rocket(){
+        Rocket rocket = new Rocket("rocket1","USA",new LaunchServiceProvider("SpaceX",2002,"USA"));
+        rocket.setMassToLEO("2200");
+        rocket.setMassToGTO("3333");
+        rocket.setMassToOther("4444");
+        return rocket;
+    }
     @BeforeEach
     public void setup() {
         target = new LaunchServiceProvider("Provider",2000,"USA");
@@ -79,4 +90,12 @@ public class LaunchServiceProviderUnitTest {
         assertFalse(provider3.isNameContainsLettersAndWithoutRepeat());
     }
 
+    @DisplayName("is set of rocket valid for launch service provider")
+    @Test
+    public void isSetOfRocketValidForLaunchServiceProvider(){
+        Set<Rocket> rockets = Sets.newLinkedHashSet();
+        rockets.add(rocket());
+        target.setRockets(rockets);
+        assertTrue(target.getRockets().equals(rockets));
+    }
 }

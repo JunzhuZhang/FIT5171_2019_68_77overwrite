@@ -5,7 +5,6 @@ import static org.apache.commons.lang3.Validate.notNull;
 import rockets.check.Validator;
 
 public class NewRocket extends Rocket{
-
     private String material;
     private int weight;
     private int loadingWeight;
@@ -19,7 +18,6 @@ public class NewRocket extends Rocket{
         this.loadingWeight = loadingWeight;
         validator = new Validator();
     }
-
     public String getMaterial() {
         return material;
     }
@@ -28,7 +26,6 @@ public class NewRocket extends Rocket{
         notBlank(material,"material cannot be null");
         this.material = material;
     }
-
     public int getWeight() {
         return weight;
     }
@@ -38,15 +35,12 @@ public class NewRocket extends Rocket{
         this.weight = weight;
     }
 
-    public int getLoadingWeight() {
-        return loadingWeight;
-    }
+    public int getLoadingWeight() { return loadingWeight; }
 
     public void setLoadingWeight(int loadingWeight) {
         this.loadingWeight = loadingWeight;
         validator.checkLoadingWeightIsLessThanZero(loadingWeight);
     }
-
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -56,7 +50,6 @@ public class NewRocket extends Rocket{
         result = prime * result + weight;
         return result;
     }
-
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
@@ -75,14 +68,6 @@ public class NewRocket extends Rocket{
             return false;
         if (weight != other.weight)
             return false;
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "NewRocket [material=" + material + ", weight=" + weight + ", loadingWeight=" + loadingWeight + "]";
-    }
-
-
+        return true; }
 }
 

@@ -204,7 +204,6 @@ public class RocketMinerUnitTest {
      * lsp3-ESA-Europe no launched rocket
      * */
     @ParameterizedTest
-//    @ValueSource(ints = {1, 3, 5})
     @ValueSource(ints = {1})
     @DisplayName("should Return most Reliable Launch Service Providers")
     public void mostReliableLaunchServiceProviders(int k) {

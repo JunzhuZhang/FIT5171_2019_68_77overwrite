@@ -16,7 +16,6 @@ public class RocketMiner {
 
     private DAO dao;
 
-
     public RocketMiner(DAO dao) {
         this.dao = dao;
     }
@@ -44,7 +43,6 @@ public class RocketMiner {
                 .sorted((a,b) -> b.size()-a.size())
                 .map(a -> a.get(0))
                 .limit(k).collect(Collectors.toList());
-
     }
 
     /**
@@ -80,53 +78,12 @@ public class RocketMiner {
                 })
                 .map((a) -> a.get(0))
                 .limit(k).collect(Collectors.toList());
-
             return result1;
         }
 
     /**
-     * TODO: to be implemented & tested!
-     * <p>
-     * Returns the top-k most reliable launch service providers as measured
-     * by percentage of successful launches.
-     *
-     * @param k the number of launch service providers to be returned.
-     * @return the list of k most reliable ones.
-     */
-    /*
-    public List<LaunchServiceProvider> reliableLaunchServiceProviders(int k) {
-        logger.info(" top " + k +" reliable Launch Service Providers");
-        if(k <= 0){
-            throw new IllegalArgumentException("the number k should no less than 1");
-        }
-        Collection<Launch> launchSet3 = dao.loadAll(Launch.class);
-        List<LaunchServiceProvider> allLaunchServiceProvider = new ArrayList<>();
-        launchSet3.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
-        Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
-
-        List<LaunchServiceProvider> result2 = collect.values().stream()
-                .sorted((a, b) -> {
-                    int aCount = 0;
-                    for (LaunchServiceProvider launchServiceProvider : a) {
-                        aCount += launchServiceProvider.getRockets().size();
-                    }
-                    int bCount = 0;
-                    for (LaunchServiceProvider launchServiceProvider : b) {
-                        bCount += launchServiceProvider.getRockets().size();
-                    }
-                    return bCount - aCount;
-                })
-                .map((a) -> a.get(0))
-                .limit(k).collect(Collectors.toList());
-        return result2;
-    }
-    */
-
-
-    /**
      * <p>
      * Returns the top-k most recent launches.
-     *
      * @param k the number of launches to be returned.
      * @return the list of k most recent launches.
      */
@@ -145,30 +102,6 @@ public class RocketMiner {
      * @param orbit the orbit
      * @return the country who sends the most payload to the orbit
      */
-    /*
-    public String dominantCountry(String orbit) {
-        logger.info("find the dominant country in" + orbit + "orbit");
-        Collection<Launch> launchSet4 = dao.loadAll(Launch.class);
-        String country = launchSet4.stream()
-                .filter((a) -> a.getOrbit().equals(orbit))
-                .map(Launch::getLaunchServiceProvider)
-                .collect(Collectors.groupingBy(LaunchServiceProvider::getCountry))
-                .values().stream().sorted((a, b) -> {
-                    int aCount = 0;
-                    for (LaunchServiceProvider launchServiceProvider : a) {
-                        aCount += launchServiceProvider.getRockets().size();
-                    }
-                    int bCount = 0;
-                    for (LaunchServiceProvider launchServiceProvider : b) {
-                        bCount += launchServiceProvider.getRockets().size();
-                    }
-                    return bCount - aCount;
-                })
-                .limit(1).findFirst().get().get(0).getCountry();
-        return country;
-    }
-    */
-
     public String dominantCountry(String orbit) {
         logger.info("find the dominant country in" + orbit + "orbit");
         Collection<Launch> launches = dao.loadAll(Launch.class);
@@ -192,8 +125,6 @@ public class RocketMiner {
                     objects.add(new LaunchServiceProvider());
                     return objects;
                 }).get(0).getCountry();
-
-
         return country;
     }
 
@@ -255,7 +186,6 @@ public class RocketMiner {
                     BigDecimal aPrice = BigDecimal.ZERO;
                     for (Launch launch : a) {
                         aPrice = aPrice.add(launch.getPrice());
-
                     }
                     BigDecimal bPrice = BigDecimal.ZERO;
                     for (Launch launch : b) {
@@ -268,5 +198,4 @@ public class RocketMiner {
                 .limit(k).collect(Collectors.toList());
         return result;
     }
-
 }
