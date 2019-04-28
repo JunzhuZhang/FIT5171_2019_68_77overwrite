@@ -13,10 +13,12 @@ import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class GunrunnerUnitTest {
     private Gunrunner gunrunner;
+    private Gunrunner gunrunner2;
 
     @BeforeEach
     public void setup() {
-        gunrunner = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 0, "", "", "");
+        gunrunner = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 0, "", "", "s");
+        gunrunner2 = new Gunrunner(1000,"gas","square","space");
     }
 
     @DisplayName("should throw exception when set fuel to null")
@@ -59,8 +61,10 @@ public class GunrunnerUnitTest {
         assertFalse(gunrunner.equals(g2));
         Launch launch = new Launch();                      // different classes
         assertFalse(gunrunner.equals(launch));
-        Gunrunner g3 = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 100, "", "", "");  // with different attribute
+        Gunrunner g3 = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 100, "", "", "s");  // with different attribute
         assertFalse(gunrunner.equals(g3));
+        Gunrunner g4 = new Gunrunner(1000, "gas", "square", "space");  // with same four attributes
+        assertTrue(gunrunner2.equals(g4));
     }
 
 

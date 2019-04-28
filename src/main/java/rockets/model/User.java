@@ -56,7 +56,6 @@ public class User extends Entity {
         if (password == null) {
             return false;
         }
-
         return this.password.equals(password.trim());
     }
 
@@ -64,11 +63,9 @@ public class User extends Entity {
     public boolean isFirstNameTooShortOrTooLong() {
         if (firstName != null) {
             int iLen = firstName.trim().length();
-            if (iLen >= MIN_LENGTH && iLen <= MAX_LENGTH) {
+            if (iLen >= MIN_LENGTH && iLen <= MAX_LENGTH)
                 return true;
-            }
         }
-
         return false;
     }
 
@@ -80,11 +77,8 @@ public class User extends Entity {
                 return true;
             }
         }
-
         return false;
     }
-
-
 
     // check the email is matched with a specific pattern
     public boolean isEmailMatchesPattern() {

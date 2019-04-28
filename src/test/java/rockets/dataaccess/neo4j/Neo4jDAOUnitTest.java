@@ -14,6 +14,7 @@ import rockets.model.Launch;
 import rockets.model.LaunchServiceProvider;
 import rockets.model.Rocket;
 import rockets.model.User;
+import rockets.model.Gunrunner;
 
 import java.time.LocalDate;
 import java.util.Collection;
@@ -132,7 +133,6 @@ public class Neo4jDAOUnitTest {
         assertFalse(launches.isEmpty());
         assertTrue(launches.contains(launch));
     }
-
 
     @Test
     public void shouldUpdateLaunchAttributesSuccessfully() {

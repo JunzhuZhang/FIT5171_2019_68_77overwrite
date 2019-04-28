@@ -18,14 +18,10 @@ public class LaunchServiceProvider extends Entity {
 
     private Set<Rocket> rockets;
 
-    private int salesRevenue;
-
     public LaunchServiceProvider(String name, int yearFounded, String country) {
         this.name = name;
         this.yearFounded = yearFounded;
         this.country = country;
-
-
         rockets = Sets.newLinkedHashSet();
     }
 
@@ -56,10 +52,8 @@ public class LaunchServiceProvider extends Entity {
     }
 
     public boolean isYearFoundedValid() {
-        if (yearFounded >= 1500 && yearFounded <= 1999) {
+        if (yearFounded >= 1500 && yearFounded <= 1999)
             return true;
-        }
-
         return false;
     }
 
@@ -86,7 +80,6 @@ public class LaunchServiceProvider extends Entity {
             if (!name.toLowerCase().equals(name)) {
                 return false;
             }
-
             boolean isMatch = true;
             boolean[] flags = new boolean[26];      // in total, 26 letters
             for (int i = 0; i < name.length(); i++) {
@@ -98,10 +91,8 @@ public class LaunchServiceProvider extends Entity {
                     flags[idx] = true;
                 }
             }
-
             return isMatch;
         }
-
         return false;
     }
 

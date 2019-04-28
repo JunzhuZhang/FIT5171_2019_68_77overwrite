@@ -18,10 +18,7 @@ import rockets.model.LaunchServiceProvider;
 import rockets.model.Rocket;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -127,6 +124,15 @@ lsp
         List<Launch> loadedLaunches = miner.mostRecentLaunches(k);
         assertEquals(k, loadedLaunches.size());
         assertEquals(sortedLaunches.subList(0, k), loadedLaunches);
+    }
+
+    @Test
+    public void noDataInDataBase() {
+        Set<Launch> emptySet = Collections.emptySet();
+        List<Launch> emptyList = Collections.emptyList();
+        Mockito.when(dao.loadAll(Launch.class)).thenReturn(emptySet);
+        assertEquals(emptyList,miner.mostRecentLaunches(1));
+        assertEquals(emptyList,miner.mostLaunchedRockets(2));
     }
 
 

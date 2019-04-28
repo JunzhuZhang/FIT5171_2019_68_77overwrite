@@ -30,6 +30,8 @@ public class Gunrunner extends Rocket {
         notBlank(shape, "shape cannot be null");
     }
 
+    public Gunrunner(){}
+
     public int getSpeed() {
         return speed;
     }
