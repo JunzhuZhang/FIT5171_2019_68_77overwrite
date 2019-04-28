@@ -15,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/RocketUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="85">
               <caret line="12" column="55" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="55" />
             </state>
           </provider>
@@ -24,32 +24,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="37" />
+            <state relative-caret-position="-1360">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-              <folding>
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1287#1288#0" expanded="true" />
-                <element signature="e#1478#1479#0" expanded="true" />
-                <element signature="e#2355#2356#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-256">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+            <state relative-caret-position="-85">
+              <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,10 +43,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchUnitTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/check/Validator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="544">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,31 +55,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/check/ValidatorUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchServiceProviderUnitTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-613">
-              <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="-324">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,15 +67,46 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/NewRocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3876">
-              <caret line="230" column="45" lean-forward="true" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
+            <state relative-caret-position="-510">
+              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7854#7855#0" expanded="true" />
-                <element signature="e#7931#7932#0" expanded="true" />
+                <element signature="e#1150#1151#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/NewRocketUnitTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="169">
+              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+              <folding>
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1287#1288#0" expanded="true" />
+                <element signature="e#1504#1505#0" expanded="true" />
+                <element signature="e#2381#2382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -119,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-718">
-              <caret line="124" selection-start-line="124" selection-end-line="124" />
+            <state relative-caret-position="234">
+              <caret line="174" column="58" lean-forward="true" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,28 +125,39 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/rockets/model/User.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/LaunchServiceProviderUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/rockets/dataaccess/neo4j/Neo4jDAOUnitTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/RocketUnitTest.java" />
         <option value="$PROJECT_DIR$/.idea/.name" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/rockets/model/Launch.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/LaunchUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/model/Launch.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/dataaccess/neo4j/Neo4jDAOUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java" />
         <option value="$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/check/Validator.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/check/ValidatorUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/rockets/model/NewRocketUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/rockets/model/NewRocket.java" />
       </list>
     </option>
   </component>
@@ -237,26 +243,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rockets" type="462c0819:PsiDirectoryNode" />
-              <item name="dataaccess" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rockets" type="462c0819:PsiDirectoryNode" />
-              <item name="dataaccess" type="462c0819:PsiDirectoryNode" />
-              <item name="neo4j" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rockets" type="462c0819:PsiDirectoryNode" />
-              <item name="mining" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
@@ -287,6 +274,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="rockets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FIT5171_2019_68_A2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="rockets" type="462c0819:PsiDirectoryNode" />
+              <item name="check" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="assignment2" type="b2602c69:ProjectViewProjectNode" />
@@ -325,7 +321,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556430419727" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556445972788" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/assign2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -346,7 +342,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull">
+  <component name="RunManager" selected="JUnit.NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero">
     <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fit5171_2019_68" />
       <extension name="coverage">
@@ -358,22 +354,6 @@
       <option name="PACKAGE_NAME" value="rockets.model" />
       <option name="MAIN_CLASS_NAME" value="rockets.model.GunrunnerUnitTest" />
       <option name="METHOD_NAME" value="shouldReturnFalseWhenTwoObjectsAreDifferent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GunrunnerUnitTest.shouldThrowExceptionWhenNewInstanceSetNameToNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fit5171_2019_68" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="rockets.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="rockets.model" />
-      <option name="MAIN_CLASS_NAME" value="rockets.model.GunrunnerUnitTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionWhenNewInstanceSetNameToNull" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -395,7 +375,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LaunchUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Neo4jDAOUnitTest.shouldCreateAGunrunnerSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fit5171_2019_68" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rockets.dataaccess.neo4j.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rockets.dataaccess.neo4j" />
+      <option name="MAIN_CLASS_NAME" value="rockets.dataaccess.neo4j.Neo4jDAOUnitTest" />
+      <option name="METHOD_NAME" value="shouldCreateAGunrunnerSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fit5171_2019_68" />
       <extension name="coverage">
         <pattern>
@@ -404,14 +400,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="rockets.model" />
-      <option name="MAIN_CLASS_NAME" value="rockets.model.LaunchUnitTest" />
-      <option name="METHOD_NAME" value="shouldReturnFalseWhenTwoObjectsAreDifferent" />
+      <option name="MAIN_CLASS_NAME" value="rockets.model.NewRocketUnitTest" />
+      <option name="METHOD_NAME" value="showThrowexceptionWhenLoadingWeightLessThanZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RocketMinerUnitTest.noDataInDataBase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fit5171_2019_68" />
       <extension name="coverage">
         <pattern>
@@ -421,7 +417,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="rockets.mining" />
       <option name="MAIN_CLASS_NAME" value="rockets.mining.RocketMinerUnitTest" />
-      <option name="METHOD_NAME" value="shouldReturnTopMostRecentLaunches(int)" />
+      <option name="METHOD_NAME" value="noDataInDataBase" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -452,19 +448,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.fit5171_2019_68 []" />
-      <item itemvalue="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenNewInstanceSetNameToNull" />
       <item itemvalue="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull" />
-      <item itemvalue="JUnit.LaunchUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" />
-      <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" />
       <item itemvalue="JUnit.GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" />
+      <item itemvalue="JUnit.Neo4jDAOUnitTest.shouldCreateAGunrunnerSuccessfully" />
+      <item itemvalue="JUnit.RocketMinerUnitTest.noDataInDataBase" />
+      <item itemvalue="JUnit.NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull" />
+        <item itemvalue="JUnit.NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero" />
+        <item itemvalue="JUnit.RocketMinerUnitTest.noDataInDataBase" />
         <item itemvalue="JUnit.GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" />
-        <item itemvalue="JUnit.RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" />
-        <item itemvalue="JUnit.LaunchUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" />
-        <item itemvalue="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenNewInstanceSetNameToNull" />
+        <item itemvalue="JUnit.Neo4jDAOUnitTest.shouldCreateAGunrunnerSuccessfully" />
+        <item itemvalue="JUnit.GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull" />
       </list>
     </recent_temporary>
   </component>
@@ -494,50 +490,50 @@
       <workItem from="1556323053822" duration="2391000" />
       <workItem from="1556328092824" duration="23277000" />
       <workItem from="1556372563652" duration="7103000" />
-      <workItem from="1556404801676" duration="13257000" />
+      <workItem from="1556404801676" duration="22679000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 53m 13s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 53m 25s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 55m 18s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 55m 41s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 56m 05s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RocketMinerUnitTest_shouldReturnTopMostRecentLaunches - 2019.04.28 at 14h 59m 25s.xml">
-      <configuration name="RocketMinerUnitTest.shouldReturnTopMostRecentLaunches" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GunrunnerUnitTest_shouldReturnFalseWhenTwoObjectsAreDifferent - 2019.04.28 at 15h 14m 45s.xml">
-      <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GunrunnerUnitTest_shouldReturnFalseWhenTwoObjectsAreDifferent - 2019.04.28 at 15h 15m 04s.xml">
-      <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GunrunnerUnitTest_shouldThrowExceptionWhenSetShapeToNull - 2019.04.28 at 15h 22m 13s.xml">
-      <configuration name="GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GunrunnerUnitTest_shouldThrowExceptionWhenSetShapeToNull - 2019.04.28 at 15h 23m 16s.xml">
       <configuration name="GunrunnerUnitTest.shouldThrowExceptionWhenSetShapeToNull" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Neo4jDAOUnitTest_shouldCreateAGunrunnerSuccessfully - 2019.04.28 at 16h 03m 01s.xml">
+      <configuration name="Neo4jDAOUnitTest.shouldCreateAGunrunnerSuccessfully" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GunrunnerUnitTest_shouldReturnFalseWhenTwoObjectsAreDifferent - 2019.04.28 at 16h 16m 03s.xml">
+      <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GunrunnerUnitTest_shouldReturnFalseWhenTwoObjectsAreDifferent - 2019.04.28 at 16h 16m 52s.xml">
+      <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GunrunnerUnitTest_shouldReturnFalseWhenTwoObjectsAreDifferent - 2019.04.28 at 16h 22m 15s.xml">
+      <configuration name="GunrunnerUnitTest.shouldReturnFalseWhenTwoObjectsAreDifferent" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RocketMinerUnitTest_noDataInDataBase - 2019.04.28 at 16h 30m 23s.xml">
+      <configuration name="RocketMinerUnitTest.noDataInDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RocketMinerUnitTest_noDataInDataBase - 2019.04.28 at 16h 33m 08s.xml">
+      <configuration name="RocketMinerUnitTest.noDataInDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RocketMinerUnitTest_noDataInDataBase - 2019.04.28 at 16h 33m 49s.xml">
+      <configuration name="RocketMinerUnitTest.noDataInDataBase" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewRocketUnitTest_showThrowexceptionWhenLoadingWeightLessThanZero - 2019.04.28 at 20h 02m 45s.xml">
+      <configuration name="NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="NewRocketUnitTest_showThrowexceptionWhenLoadingWeightLessThanZero - 2019.04.28 at 20h 05m 59s.xml">
+      <configuration name="NewRocketUnitTest.showThrowexceptionWhenLoadingWeightLessThanZero" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99444000" />
+    <option name="totallyTimeSpent" value="108866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22977346" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27022654" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -546,7 +542,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3428064" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919093" visible="true" weight="0.3428064" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49919093" weight="0.39786857" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -623,13 +619,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java</url>
-          <line>123</line>
+          <line>120</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java</url>
-          <line>144</line>
+          <line>150</line>
           <properties class="rockets.mining.RocketMinerUnitTest" method="shouldReturnTopMostExpensiveLaunches">
             <option name="EMULATED" value="true" />
           </properties>
@@ -637,26 +633,24 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java</url>
-          <line>38</line>
+          <line>40</line>
           <properties class="rockets.model.GunrunnerUnitTest" method="shouldThrowExceptionWhenSetShapeToNull">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java</url>
+          <line>56</line>
+          <properties class="rockets.model.GunrunnerUnitTest" method="shouldReturnFalseWhenTwoObjectsAreDifferent">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/.name">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -670,39 +664,12 @@
     <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4845" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/dataaccess/neo4j/Neo4jDAOUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/util/ArrayList.java">
@@ -753,16 +720,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state relative-caret-position="-378">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/dataaccess/neo4j/Neo4jDAOUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-514">
+          <caret line="135" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchServiceProviderUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <caret line="66" column="28" selection-start-line="66" selection-start-column="28" selection-end-line="66" selection-end-column="28" />
+          <folding>
+            <element signature="e#2606#2607#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="81" column="13" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/UserUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1207">
+          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rockets/dataaccess/neo4j/Neo4jDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
+        <state relative-caret-position="489">
           <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -774,84 +822,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/RocketUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="55" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Launch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="169">
+          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchServiceProviderUnitTest.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-613">
-          <caret line="34" column="52" lean-forward="true" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/LaunchServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/rockets/mining/RocketMinerUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-718">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/GunrunnerUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-256">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Gunrunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="63" column="31" selection-start-line="63" selection-start-column="31" selection-end-line="63" selection-end-column="31" />
-          <folding>
-            <element signature="e#1259#1260#0" expanded="true" />
-            <element signature="e#1287#1288#0" expanded="true" />
-            <element signature="e#1478#1479#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/LaunchUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="234">
+          <caret line="174" column="58" lean-forward="true" selection-start-line="174" selection-start-column="5" selection-end-line="174" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -860,12 +854,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rockets/mining/RocketMiner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3876">
-          <caret line="230" column="45" lean-forward="true" selection-start-line="230" selection-start-column="45" selection-end-line="230" selection-end-column="45" />
+        <state relative-caret-position="-85">
+          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#7854#7855#0" expanded="true" />
-            <element signature="e#7931#7932#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/RocketUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" column="55" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/Rocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/check/Validator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/check/ValidatorUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-324">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/rockets/model/NewRocketUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rockets/model/NewRocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="e#1150#1151#0" expanded="true" />
           </folding>
         </state>
       </provider>

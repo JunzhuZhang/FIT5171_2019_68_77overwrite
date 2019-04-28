@@ -39,13 +39,12 @@ public class NewRocket extends Rocket{
     }
 
     public int getLoadingWeight() {
-        validator.checkLoadingWeightIsLessThanZero(loadingWeight);
         return loadingWeight;
     }
 
     public void setLoadingWeight(int loadingWeight) {
-
         this.loadingWeight = loadingWeight;
+        validator.checkLoadingWeightIsLessThanZero(loadingWeight);
     }
 
     @Override
