@@ -27,6 +27,7 @@ public class Gunrunner extends Rocket {
         this.usage = usage;
         this.fuel = fuel;
         this.shape = shape;
+        notBlank(shape, "shape cannot be null");
     }
 
     public int getSpeed() {
@@ -34,7 +35,15 @@ public class Gunrunner extends Rocket {
     }
 
     public void setSpeed(int speed) {
-        this.speed = speed;
+
+            if(speed > 0){
+                this.speed = speed;;
+            }
+            else {
+
+                throw new IllegalArgumentException("speed cannot be negative");
+            }
+
     }
 
     public String getUsage() {
