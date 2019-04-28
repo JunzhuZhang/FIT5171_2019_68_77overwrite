@@ -39,7 +39,7 @@ public class RocketMiner {
         }
         List<Rocket> rockets = new ArrayList<>();
         launchSet1.stream().map(a -> a.getLaunchServiceProvider().getRockets()).forEach(a -> rockets.addAll(a));
-        Map<String, List<Rocket>> collect = rockets.stream().collect(Collectors.groupingBy((a) -> a.getName()));
+        Map<String, List<Rocket>> collect = rockets.stream().collect(Collectors.groupingBy(a -> a.getName()));
         return collect.values().stream()
                 .sorted((a,b) -> b.size()-a.size())
                 .map(a -> a.get(0))
@@ -66,7 +66,7 @@ public class RocketMiner {
         launchSet2.stream().map(Launch::getLaunchServiceProvider).forEach((a -> allLaunchServiceProvider.add(a)));
         Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
 
-        List<LaunchServiceProvider> result = collect.values().stream()
+        List<LaunchServiceProvider> result1 = collect.values().stream()
                 .sorted((a, b) -> {
                     int aCount = 0;
                     for (LaunchServiceProvider launchServiceProvider : a) {
@@ -78,11 +78,10 @@ public class RocketMiner {
                     }
                     return bCount - aCount;
                 })
-
                 .map((a) -> a.get(0))
                 .limit(k).collect(Collectors.toList());
 
-            return result;
+            return result1;
         }
 
     /**
@@ -94,8 +93,8 @@ public class RocketMiner {
      * @param k the number of launch service providers to be returned.
      * @return the list of k most reliable ones.
      */
-    public List<LaunchServiceProvider> ReliableLaunchServiceProviders(int k) {
-        logger.info(" top " + k +" Reliable Launch Service Providers");
+    public List<LaunchServiceProvider> reliableLaunchServiceProviders(int k) {
+        logger.info(" top " + k +" reliable Launch Service Providers");
         if(k <= 0){
             throw new IllegalArgumentException("the number k should no less than 1");
         }
@@ -104,7 +103,7 @@ public class RocketMiner {
         launchSet3.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
         Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
 
-        List<LaunchServiceProvider> result = collect.values().stream()
+        List<LaunchServiceProvider> result2 = collect.values().stream()
                 .sorted((a, b) -> {
                     int aCount = 0;
                     for (LaunchServiceProvider launchServiceProvider : a) {
@@ -120,7 +119,7 @@ public class RocketMiner {
                 .map((a) -> a.get(0))
                 .limit(k).collect(Collectors.toList());
 
-        return result;
+        return result2;
     }
 
 
@@ -226,7 +225,7 @@ public class RocketMiner {
         }
         List<LaunchServiceProvider> result = launchSet.stream()
                 .filter(a -> a.getLaunchDate().getYear() == year)
-                .collect(Collectors.groupingBy((a) -> a.getLaunchServiceProvider().getName()))
+                .collect(Collectors.groupingBy(a -> a.getLaunchServiceProvider().getName()))
                 .values().stream().sorted((a, b) -> {
                     BigDecimal aPrice = BigDecimal.ZERO;
                     for (Launch launch : a) {

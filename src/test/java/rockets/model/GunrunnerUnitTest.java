@@ -6,8 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 
 public class GunrunnerUnitTest {
     private Gunrunner gunrunner;
@@ -15,7 +17,6 @@ public class GunrunnerUnitTest {
     @BeforeEach
     public void setup() {
         gunrunner = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 0, "", "", "");
-
     }
 
     @DisplayName("should throw exception when set fuel to null")
@@ -37,16 +38,29 @@ public class GunrunnerUnitTest {
     @Test
     public void shouldThrowExceptionWhenSetShapeToNull() {
         NullPointerException exception = assertThrows(NullPointerException.class,
-                () -> new Gunrunner(100,"11","22",null));
+                () -> gunrunner.setShape(null));
         assertEquals(exception.getMessage(), "shape cannot be null");
     }
 
-    @DisplayName("should return false when set speed to be negative")
+    @DisplayName("should throw exception when set speed to be negative")
     @Test
     public void shouldThrowExceptionWhenNewInstanceSetNameToNull() {
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class,
                 () -> gunrunner.setSpeed(-10));
         assertEquals(exception.getMessage(), "speed cannot be negative");
+    }
+
+    @DisplayName("should return false when two objects are different")
+    @Test
+    public void shouldReturnFalseWhenTwoObjectsAreDifferent() {
+        Gunrunner g  = gunrunner;                     // refer to same launch
+        assertTrue(gunrunner.equals(g));
+        Gunrunner g2  = null;                     // one rocket set to null
+        assertFalse(gunrunner.equals(g2));
+        Launch launch = new Launch();                      // different classes
+        assertFalse(gunrunner.equals(launch));
+        Gunrunner g3 = new Gunrunner("Gunrunner", "USA", new LaunchServiceProvider("Provider",2000,"USA"), 100, "", "", "");  // with different attribute
+        assertFalse(gunrunner.equals(g3));
     }
 
 

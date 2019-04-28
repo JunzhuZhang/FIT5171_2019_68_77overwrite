@@ -49,11 +49,6 @@ public class LaunchServiceProvider extends Entity {
         return rockets;
     }
 
-    public int getSalesRevenue(){ return salesRevenue; }
-
-    public void setSalesRevenue(int revenue){
-        salesRevenue = salesRevenue + revenue;
-    }
 
     public void setHeadquarters(String headquarters) {
         notNull(headquarters, "headquarters cannot be null");
