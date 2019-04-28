@@ -25,6 +25,8 @@ public class LaunchServiceProvider extends Entity {
         rockets = Sets.newLinkedHashSet();
     }
 
+    public LaunchServiceProvider(){}
+
     public String getName() {
         return name;
     }

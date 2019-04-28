@@ -8,6 +8,12 @@ import static org.junit.jupiter.api.Assertions.*;
 public class RocketUnitTest {
     private Rocket target;
 
+    //for integration test
+    private LaunchServiceProvider makeProvider(){
+        LaunchServiceProvider lsp= new LaunchServiceProvider("SpaceX",2002,"USA");
+        return lsp;
+    }
+
     @BeforeEach
     public void setup() {
         target  = new Rocket("Antares", "USA", new LaunchServiceProvider("Provider",2000,"USA"));
@@ -50,7 +56,16 @@ public class RocketUnitTest {
         rocket3.setMassToGTO("800");
         assertTrue(target.equals(rocket3));
     }
-
+    //integration test
+    @Test
+    public void testSetRocketSuccess() {
+        Rocket rocket = new Rocket();
+        new Rocket("rocket1","USA",new LaunchServiceProvider("SpaceX",2002,"USA"));
+        rocket.setMassToLEO("2200");
+        rocket.setMassToGTO("3333");
+        rocket.setMassToOther("4444");
+    }
+    //integration test
     @DisplayName("is Manufacture A Valid LaunchService Provider")
     @Test
     public void isManufactureAValidLaunchServiceProvider(){

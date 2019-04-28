@@ -33,7 +33,6 @@ public class RocketMinerUnitTest {
     private DAO dao;
     private RocketMiner miner;
     private List<Rocket> rockets;
-
     private List<LaunchServiceProvider> lsps;
     private List<Launch> launches;
     private LaunchServiceProvider lsp1,lsp2,lsp3;
@@ -45,7 +44,6 @@ public class RocketMinerUnitTest {
         miner = new RocketMiner(dao);
         rockets = Lists.newArrayList();
 
-
         lsps = Arrays.asList(
                 new LaunchServiceProvider("ULA", 1990, "USA"),
                 new LaunchServiceProvider("SpaceX", 2002, "USA"),
@@ -55,10 +53,6 @@ public class RocketMinerUnitTest {
         lsp1 = Mockito.mock(LaunchServiceProvider.class);
         lsp2 = Mockito.mock(LaunchServiceProvider.class);
         lsp3 = Mockito.mock(LaunchServiceProvider.class);
-
-
-
-
 
         // index of lsp of each rocket
         int[] lspIndex = new int[]{0, 0, 0, 1, 1};
@@ -85,7 +79,6 @@ public class RocketMinerUnitTest {
             l.setOrbit("LEO");
             l.setPrice(BigDecimal.valueOf(launchPrice[i]));
             l.setLaunchServiceProvider(rockets.get(rocketIndex[i]).getManufacturer());
-
             spy(l);
             return l;
         }).collect(Collectors.toList());
@@ -104,21 +97,12 @@ public class RocketMinerUnitTest {
         lsp1.setRockets(rockets1);
         lsp2.setRockets(rockets2);
         lsp3.setRockets(rockets3);
-
-
-
-
-
     }
-/*
-rocket 0 0 0 0 1 1 1 2 2 3
-lsp
- */
 
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     public void shouldReturnTopMostRecentLaunches(int k) {
-        when(dao.loadAll(Launch.class)).thenReturn(launches);
+        Mockito.when(dao.loadAll(Launch.class)).thenReturn(launches);
         List<Launch> sortedLaunches = new ArrayList<>(launches);
         sortedLaunches.sort((a, b) -> -a.getLaunchDate().compareTo(b.getLaunchDate()));
         List<Launch> loadedLaunches = miner.mostRecentLaunches(k);
@@ -135,10 +119,9 @@ lsp
         assertEquals(emptyList,miner.mostLaunchedRockets(2));
     }
 
-
     /**
      * The top-k most expensive launch.
-     * if k = 10, the launchprice list should be
+     * if k = 10, the launch price list should be
      * {500,1000,2000,800,5000,4000,3000,6000,7000,10000}
      * {10000,7000,6000,5000,4000,3000,2000,1000,800,500}
      * the launch 10 is most expensive launch
@@ -157,7 +140,6 @@ lsp
         assertEquals(sortedLaunches.subList(0, k), loadedLaunches);
     }
 
-
     /**
      * Return a list of rockets most Launched Rockets
      * 10 launches with the rocket index{0, 0, 0, 0, 1, 1, 1, 2, 2, 3}
@@ -167,17 +149,16 @@ lsp
      * rocket3 1 launches
      * the top4 most launched rockets is rocket0,rocket1,rocket2,and rocket3
      * the sequence is the same as that of rockets list, so I use rocket list as assert conditions
-     * */
-    /*
-     @ParameterizedTest
-     @ValueSource(ints = {1, 2, 3})
-     @DisplayName("should Return Top k most Launched Rockets")
-     public void shouldReturnTopMostLaunchedRockets(int k) {
-
-         List<Rocket> loadedRockets = miner.mostLaunchedRockets(k);
-         assertEquals(k,loadedRockets.size());
-         assertEquals(rockets.subList(0, k), loadedRockets);
-     }
+     */
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    @DisplayName("should Return Top k most Launched Rockets")
+    public void shouldReturnTopMostLaunchedRockets(int k) {
+        when(dao.loadAll(Launch.class)).thenReturn(launches);
+        List<Rocket> loadedRockets = miner.mostLaunchedRockets(k);
+        assertEquals(k, loadedRockets.size());
+        assertEquals(rockets.subList(0, k), loadedRockets);
+    }
 
     /**
      * Return a list of Highest Revenue LaunchService Providers
@@ -185,25 +166,20 @@ lsp
      * service provider 1 has 3 rockets, 9 launches, the total sale revenue is 29300
      * service provider 2 has 2 rockets, 1 launch, the total sale revenue is 10000
      * service provider 3 has no rocket, no launch, the sale revenue is 0
-     * so the top 3 service provider is service provider 1 and service provider 2
+     * so the top 1 service provider is service provider 1
      * */
-    /*
     @ParameterizedTest
-    @CsvSource({"1,2017","2,2017"})
+    @CsvSource({"1,2017"})
     @DisplayName("should Return Highest Revenue LaunchServiceProviders")
-    public void shouldReturnHighestRevenueLaunchServiceProviders(int k,int year) {
-
-        Mockito.when(lsp1.getName()).thenReturn("ULA");
-        Mockito.when(lsp2.getName()).thenReturn("SpaceX");
-        Mockito.when(lsp3.getName()).thenReturn("ESA");
-
+    public void shouldReturnHighestRevenueLaunchServiceProviders(int k, int year) {
+        Mockito.when(dao.loadAll(Launch.class)).thenReturn(launches);
         List<LaunchServiceProvider> testResult = new ArrayList<>();
         testResult.add(lsp1);
-        testResult.add(lsp2);
         List<LaunchServiceProvider> loadedProviders = miner.highestRevenueLaunchServiceProviders(k, year);
-        assertEquals(k,loadedProviders.size());
+        assertEquals(k, loadedProviders.size());
         assertEquals(testResult, loadedProviders);
     }
+
 
     /**
      * Return dominant country who has the most launched rockets in an orbit
@@ -212,28 +188,24 @@ lsp
      * lsp3-ESA-Europe no launched rocket
      * so the dominant country who has the most launched rockets in an orbit is USA
      * */
-    /*
     @ParameterizedTest
     @ValueSource(strings = {"LEO"})
     @DisplayName("should Return dominant country who has the most launched rockets in an orbit")
     public void shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit(String orbit) {
-
+        when(dao.loadAll(Launch.class)).thenReturn(launches);
         String dominantCountry = miner.dominantCountry(orbit);
-
         assertEquals("USA", dominantCountry);
     }
-
     /**
      * Return a list of providers with the most Reliable Launch Service
      * Reliable is measured by percentage of successful launches.
      * lsp1-ULA-USA 9 launched rockets
      * lsp2-SpaceX-USA 1 launched rockets
      * lsp3-ESA-Europe no launched rocket
-     *
      * */
-    /*
     @ParameterizedTest
-    @ValueSource(ints = {1, 3, 5})
+//    @ValueSource(ints = {1, 3, 5})
+    @ValueSource(ints = {1})
     @DisplayName("should Return most Reliable Launch Service Providers")
     public void mostReliableLaunchServiceProviders(int k) {
         Mockito.when(dao.loadAll(Launch.class)).thenReturn(launches);
@@ -241,9 +213,11 @@ lsp
         sortedLaunches.sort((a, b) -> -a.getPrice().compareTo(b.getPrice()));
         List<LaunchServiceProvider> testResult = miner.mostReliableLaunchServiceProviders(k);
         assertEquals(k, testResult.size());
-        assertEquals(sortedLaunches.subList(0, k), testResult);
+        ArrayList<LaunchServiceProvider> launchServiceProviders = new ArrayList<>();
+        launchServiceProviders.add(sortedLaunches.get(k).getLaunchServiceProvider());
+        assertEquals(launchServiceProviders, testResult);
     }
-    */
+
 
 
 }
