@@ -93,6 +93,7 @@ public class RocketMiner {
      * @param k the number of launch service providers to be returned.
      * @return the list of k most reliable ones.
      */
+    /*
     public List<LaunchServiceProvider> reliableLaunchServiceProviders(int k) {
         logger.info(" top " + k +" reliable Launch Service Providers");
         if(k <= 0){
@@ -115,15 +116,11 @@ public class RocketMiner {
                     }
                     return bCount - aCount;
                 })
-
                 .map((a) -> a.get(0))
                 .limit(k).collect(Collectors.toList());
-
         return result2;
     }
-
-
-
+    */
 
 
     /**
@@ -167,8 +164,6 @@ public class RocketMiner {
                     return bCount - aCount;
                 })
                 .limit(1).findFirst().get().get(0).getCountry();
-
-
         return country;
     }
 

@@ -86,14 +86,4 @@ public class Gunrunner extends Rocket {
     public int hashCode() {
         return Objects.hash(super.hashCode(), speed, usage, fuel, shape);
     }
-
-    @Override
-    public String toString() {
-        return "Gunrunner{" +
-                "speed=" + speed +
-                ", usage='" + usage + '\'' +
-                ", fuel='" + fuel + '\'' +
-                ", shape='" + shape + '\'' +
-                '}';
-    }
 }
