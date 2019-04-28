@@ -16,7 +16,6 @@ public class RocketMiner {
 
     private DAO dao;
 
-    Collection<Launch> launchSet = dao.loadAll(Launch.class);
 
     public RocketMiner(DAO dao) {
         this.dao = dao;
@@ -34,12 +33,12 @@ public class RocketMiner {
         if(k <= 0){
             throw new IllegalArgumentException("the number k cannot less than 1");
         }
-
-        if (launchSet.isEmpty()){
+        Collection<Launch> launchSet1 = dao.loadAll(Launch.class);
+        if (launchSet1.isEmpty()){
             return Collections.emptyList();
         }
         List<Rocket> rockets = new ArrayList<>();
-        launchSet.stream().map(a -> a.getLaunchServiceProvider().getRockets()).forEach(a -> rockets.addAll(a));
+        launchSet1.stream().map(a -> a.getLaunchServiceProvider().getRockets()).forEach(a -> rockets.addAll(a));
         Map<String, List<Rocket>> collect = rockets.stream().collect(Collectors.groupingBy((a) -> a.getName()));
         return collect.values().stream()
                 .sorted((a,b) -> b.size()-a.size())
@@ -62,9 +61,9 @@ public class RocketMiner {
         if(k <= 0){
             throw new IllegalArgumentException("the number k should larger than 0");
         }
-
+        Collection<Launch> launchSet2 = dao.loadAll(Launch.class);
         List<LaunchServiceProvider> allLaunchServiceProvider = new ArrayList<>();
-        launchSet.stream().map(Launch::getLaunchServiceProvider).forEach((a -> allLaunchServiceProvider.add(a)));
+        launchSet2.stream().map(Launch::getLaunchServiceProvider).forEach((a -> allLaunchServiceProvider.add(a)));
         Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
 
         List<LaunchServiceProvider> result = collect.values().stream()
@@ -100,9 +99,9 @@ public class RocketMiner {
         if(k <= 0){
             throw new IllegalArgumentException("the number k should no less than 1");
         }
-
+        Collection<Launch> launchSet3 = dao.loadAll(Launch.class);
         List<LaunchServiceProvider> allLaunchServiceProvider = new ArrayList<>();
-        launchSet.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
+        launchSet3.stream().map(Launch::getLaunchServiceProvider).forEach(((a) -> allLaunchServiceProvider.add(a)));
         Map<String, List<LaunchServiceProvider>> collect = allLaunchServiceProvider.stream().collect(Collectors.groupingBy(LaunchServiceProvider::getName));
 
         List<LaunchServiceProvider> result = collect.values().stream()
@@ -137,9 +136,9 @@ public class RocketMiner {
      */
     public List<Launch> mostRecentLaunches(int k) {
         logger.info("find most recent " + k + " launches");
-
+        Collection<Launch> launches = dao.loadAll(Launch.class);
         Comparator<Launch> launchDateComparator = (a, b) -> -a.getLaunchDate().compareTo(b.getLaunchDate());
-        return launchSet.stream().sorted(launchDateComparator).limit(k).collect(Collectors.toList());
+        return launches.stream().sorted(launchDateComparator).limit(k).collect(Collectors.toList());
     }
 
     /**
@@ -152,8 +151,8 @@ public class RocketMiner {
      */
     public String dominantCountry(String orbit) {
         logger.info("find the dominant country in" + orbit + "orbit");
-
-        String country = launchSet.stream()
+        Collection<Launch> launchSet4 = dao.loadAll(Launch.class);
+        String country = launchSet4.stream()
                 .filter((a) -> a.getOrbit().equals(orbit))
                 .map(Launch::getLaunchServiceProvider)
                 .collect(Collectors.groupingBy(LaunchServiceProvider::getCountry))
@@ -187,11 +186,11 @@ public class RocketMiner {
         if(k <= 0){
             throw new IllegalArgumentException("the number k cannot be negative or zero");
         }
-
-        if (launchSet.isEmpty()){
+        Collection<Launch> launchSet5 = dao.loadAll(Launch.class);
+        if (launchSet5.isEmpty()){
             return Collections.emptyList();
         }
-        List<Launch> launchList = new ArrayList<>(launchSet);
+        List<Launch> launchList = new ArrayList<>(launchSet5);
         Collections.sort(launchList, new Comparator<Launch>() {
             @Override
             public int compare(Launch o1, Launch o2) {
@@ -221,7 +220,7 @@ public class RocketMiner {
         if (k <= 0) {
             throw new IllegalArgumentException("the number of k should no less than i");
         }
-
+        Collection<Launch> launchSet = dao.loadAll(Launch.class);
         if (launchSet.isEmpty()) {
             return Collections.emptyList();
         }
