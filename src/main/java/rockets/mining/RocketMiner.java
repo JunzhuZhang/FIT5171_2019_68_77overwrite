@@ -145,6 +145,7 @@ public class RocketMiner {
      * @param orbit the orbit
      * @return the country who sends the most payload to the orbit
      */
+    /*
     public String dominantCountry(String orbit) {
         logger.info("find the dominant country in" + orbit + "orbit");
         Collection<Launch> launchSet4 = dao.loadAll(Launch.class);
@@ -164,6 +165,35 @@ public class RocketMiner {
                     return bCount - aCount;
                 })
                 .limit(1).findFirst().get().get(0).getCountry();
+        return country;
+    }
+    */
+
+    public String dominantCountry(String orbit) {
+        logger.info("find the dominant country in" + orbit + "orbit");
+        Collection<Launch> launches = dao.loadAll(Launch.class);
+        String country = launches.stream()
+                .filter((a) -> a.getOrbit().equals(orbit))
+                .map(Launch::getLaunchServiceProvider)
+                .collect(Collectors.groupingBy(LaunchServiceProvider::getCountry))
+                .values().stream().sorted((a, b) -> {
+                    int aCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : a) {
+                        aCount += launchServiceProvider.getRockets().size();
+                    }
+                    int bCount = 0;
+                    for (LaunchServiceProvider launchServiceProvider : b) {
+                        bCount += launchServiceProvider.getRockets().size();
+                    }
+                    return bCount - aCount;
+                })
+                .limit(1).findFirst().orElseGet(() -> {
+                    ArrayList<LaunchServiceProvider> objects = new ArrayList<>();
+                    objects.add(new LaunchServiceProvider());
+                    return objects;
+                }).get(0).getCountry();
+
+
         return country;
     }
 
