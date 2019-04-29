@@ -98,7 +98,7 @@ public class RocketMinerUnitTest {
         lsp2.setRockets(rockets2);
         lsp3.setRockets(rockets3);
     }
-
+    //return the top k most recent launches
     @ParameterizedTest
     @ValueSource(ints = {1, 2, 3})
     public void shouldReturnTopMostRecentLaunches(int k) {
@@ -109,7 +109,7 @@ public class RocketMinerUnitTest {
         assertEquals(k, loadedLaunches.size());
         assertEquals(sortedLaunches.subList(0, k), loadedLaunches);
     }
-
+    //if no data in the list, return an empty list
     @Test
     public void noDataInDataBase() {
         Set<Launch> emptySet = Collections.emptySet();
@@ -180,7 +180,6 @@ public class RocketMinerUnitTest {
         assertEquals(testResult, loadedProviders);
     }
 
-
     /**
      * Return dominant country who has the most launched rockets in an orbit
      * lsp1-ULA-USA 9 launched rockets
@@ -192,31 +191,28 @@ public class RocketMinerUnitTest {
     @ValueSource(strings = {"LEO"})
     @DisplayName("should Return dominant country who has the most launched rockets in an orbit")
     public void shouldDominantCountryHavingtheMostLaunchedRocketsinAnOrbit(String orbit) {
-        when(dao.loadAll(Launch.class)).thenReturn(launches);
+        Mockito.when(dao.loadAll(Launch.class)).thenReturn(launches);
         String dominantCountry = miner.dominantCountry(orbit);
         assertEquals("USA", dominantCountry);
     }
+
     /**
      * Return a list of providers with the most Reliable Launch Service
      * Reliable is measured by percentage of successful launches.
      * lsp1-ULA-USA 9 launched rockets
      * lsp2-SpaceX-USA 1 launched rockets
      * lsp3-ESA-Europe no launched rocket
-     * */
+     * so the most reliable launch service provider is launch service provider 1
+     */
     @ParameterizedTest
     @ValueSource(ints = {1})
     @DisplayName("should Return most Reliable Launch Service Providers")
     public void mostReliableLaunchServiceProviders(int k) {
         Mockito.when(dao.loadAll(Launch.class)).thenReturn(launches);
-        List<Launch> sortedLaunches = new ArrayList<>(launches);
-        sortedLaunches.sort((a, b) -> -a.getPrice().compareTo(b.getPrice()));
         List<LaunchServiceProvider> testResult = miner.mostReliableLaunchServiceProviders(k);
         assertEquals(k, testResult.size());
-        ArrayList<LaunchServiceProvider> launchServiceProviders = new ArrayList<>();
-        launchServiceProviders.add(sortedLaunches.get(k).getLaunchServiceProvider());
-        assertEquals(launchServiceProviders, testResult);
+        List<LaunchServiceProvider> expectedResult = new ArrayList<>();
+        expectedResult.add(lsp1);
+        assertEquals(expectedResult, testResult);
     }
-
-
-
 }

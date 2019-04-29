@@ -114,6 +114,4 @@ public class RocketUnitTest {
         Rocket rocket2 = new Rocket("rocker2 ", "", new LaunchServiceProvider("Provider",2000,"USA"));        // with extra space
         assertFalse(rocket2.isNameMatchesWithPattern());
     }
-
-
 }

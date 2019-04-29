@@ -31,7 +31,7 @@ public class GunrunnerUnitTest {
     @DisplayName("should throw exception when set usage to empty or null")
     @ParameterizedTest
     @ValueSource(strings = {"", " ", "  "})
-    public void shouldThrowexceptionWhenSetUsageToEmptyOrNull(String usage) {
+    public void shouldThrowExceptionWhenSetUsageToEmptyOrNull(String usage) {
         Exception exception = assertThrows(IllegalArgumentException.class, () -> gunrunner.setUsage(usage));
         assertEquals("usage cannot be null or empty", exception.getMessage());
     }
@@ -55,9 +55,9 @@ public class GunrunnerUnitTest {
     @DisplayName("should return false when two objects are different")
     @Test
     public void shouldReturnFalseWhenTwoObjectsAreDifferent() {
-        Gunrunner g  = gunrunner;                     // refer to same launch
+        Gunrunner g  = gunrunner;                     // refer to same gunrunner
         assertTrue(gunrunner.equals(g));
-        Gunrunner g2  = null;                     // one rocket set to null
+        Gunrunner g2  = null;                     // one gunrunner set to null
         assertFalse(gunrunner.equals(g2));
         Launch launch = new Launch();                      // different classes
         assertFalse(gunrunner.equals(launch));

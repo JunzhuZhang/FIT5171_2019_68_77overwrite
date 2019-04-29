@@ -12,6 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class LaunchServiceProviderUnitTest {
     LaunchServiceProvider target;
 
+    //for integration test
     private Rocket rocket(){
         Rocket rocket = new Rocket("rocket1","USA",new LaunchServiceProvider("SpaceX",2002,"USA"));
         rocket.setMassToLEO("2200");
@@ -19,6 +20,7 @@ public class LaunchServiceProviderUnitTest {
         rocket.setMassToOther("4444");
         return rocket;
     }
+
     @BeforeEach
     public void setup() {
         target = new LaunchServiceProvider("Provider",2000,"USA");

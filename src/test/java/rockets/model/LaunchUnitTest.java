@@ -50,7 +50,6 @@ public class LaunchUnitTest {
     }
 
     //integration test
-
     @Test
     public void testSetLaunchSuccess() {
         Launch launch = new Launch();
